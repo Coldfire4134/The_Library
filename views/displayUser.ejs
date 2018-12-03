@@ -1,0 +1,13 @@
+<% include top %>
+        <h3>Welcome to the library</h3>
+        <%- gamesList %>
+        <% if (currentUser) { %>
+            <form class="addGame">
+                <input type="text" name="game" placeholder="Game"/>
+                <input type="text" name="cost" placeholder="Cost"/>
+                <input type="number" name="playtime" placeholder="Hours Played"/>
+                <input type="textarea" name="notes" placeholder="Notes"/>
+                <input type="submit" value="Submit"/>
+            </form>
+        <% } %>
+<% include bottom %>
